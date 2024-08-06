@@ -163,7 +163,7 @@ div.tt p
     background-color: white;
     position:absolute;
     left:0px;
-    bottom: 85px;
+    bottom: 85px    ;
 }
 div.externo p
 {
@@ -264,14 +264,91 @@ a
 }
 #simulador
 {
-    background-color:rgb(227,227,227)
+    padding: 30px 8%;
+    background-color:rgb(227,227,227);
+    display: flex;
+    align-items:center;
+    flex-direction: column;
 }
 #simulador>img
 {
     width:75vw;
     height: 35vw;
 }
+#simulador>h2
+{
+    font-family:'Gotanlight';
+    font-size:18px;
+    margin: 0px;
+    line-height:18px;
+}
 #simulador>h3
 {
+    margin: 20px 0px;
+    font-family:'Gotanlight';
+    font-size: 12px;
+    line-height:16px;
     color:#636363;
+}
+#bt
+{
+    color:white;
+    font-family: 'Gotanbook';
+    line-height: 16px;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 0.454545em 0.909091em;
+    background-color: rgb(17,127,202);
+}
+a#bt:hover
+{
+    text-decoration: underline;
+}
+footer
+{
+    background: url(img/shortcut/form.png) right top no-repeat #10004f;
+}
+div#footer
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+div#ctt
+{
+    max-width:25%;
+    padding: 16px ;
+}
+#ctt>h4
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size:18px;
+    line-height: 24px;
+    color: white;
+    letter-spacing: 0.2px;
+    padding: 16px 0px;
+}
+#ctt>ul>img
+{
+    margin: 0px 0px;
+}
+#cttft
+{
+    padding: 0px 0px 30px 16px;
+}
+ul>img
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+}
+div#local
+{
+    text-align: center;
+    background-color: white;
+}
+div#local>p
+{
+    color: black;
 }
