@@ -6,7 +6,7 @@
     <title>Latan</title>
     <link rel="shortcut icon" href="https://s.latamairlines.com/images/seo/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -23,8 +23,17 @@
                 <h1>COMPRA DE PONTOS</h1>
                 <P>Um jeito fácil e rápido de comprar pontos LATAM Pass, completar seu saldo e viajar. Simule, confirme e receba seus pontos para resgatar passagens aéreas e produtos!</P>
             </div>
-            <div>
-                <img id="menu" src="img/multiplus-icon.5df031e42384ea26a8eb.png" alt="menu">
+            <div id="pt2">
+                <div class="login-container">
+                    <h2 id="log">COMECE POR AQUI</h2>
+                    <form id="loginForm">
+                        <label for="cpf">Informe aqui o seu número LATAM Pass para comprar pontos.:</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="NÚMERO LATAM PASS OU CPF" required>
+                        
+                        <button type="submit">Entrar</button>
+                        <p id="error-message" class="hidden">CPF inválido. Verifique o formato e tente novamente.</p>
+                    </form>
+                </div>
             </div>
         </div>
         <div id="meio">
@@ -126,5 +135,6 @@
     <p>© 2024 LATAM Airlines Group S.A. - Todos os direitos reservados. CNPJ nº 02.012.862/0001-60 Rua Verbo Divino nº 2.001, 10º andar, Chácara Santo Antônio, São Paulo, SP, CEP 04.719-002, Brasil.</p>
 </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
