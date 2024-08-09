@@ -108,7 +108,27 @@
     <h3>
         CRIE RECORDAÇÕES, COMPRE PONTOS PARA VIAJAR!
     </h3>
-    <img src="img/multiplus-icon.5df031e42384ea26a8eb.png" alt="">
+
+    <div class="container">
+        <div id="select">
+            <select id="pontos" onchange="converterPontos()" size="1">
+                <!-- Opções de 1.000 a 1.000.000 pontos -->
+                <script>
+                    for (let i = 1000; i <= 1000000; i += 1000) {
+                        document.write(`<option value="${i}">${i.toLocaleString('pt-BR')} PONTOS</option>`);
+                    }
+                </script>
+            </select>
+            <label class="labelcon">Conversor de Pontos para Dinheiro</h1>
+            <label class="labelcon" for="pontos">Selecione a quantidade de pontos:</label>
+        </div>
+        <span id="igual">=</span>
+        <div class="resultado">
+            <p class="resul">R$ <span class="resul" id="dinheiro">70,00</span></p>
+            <label class="labelcon" for="dinheiro">VALOR EM REAIS</label>
+        </div>
+    </div>
+
     <a id="bt" href="">QUERO COMPRAR PONTOS</a>
 </div>
 <footer>
@@ -136,5 +156,6 @@
 </div>
 </footer>
 <script src="script.js"></script>
+<script src="script1.js"></script>
 </body>
 </html>

@@ -17,7 +17,31 @@
 @media (min-width:850px)
 {
     div#fora{
-        columns:2
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+@media (max-width:851px)
+{
+    div#fora{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width:850px)
+{
+    option
+    {
+        font-size: 20px;
+    }
+}
+@media (max-width:849px)
+{
+    option
+    {
+        font-size: 2.5vw;
     }
 }
 *
@@ -63,11 +87,12 @@ div#header
 
 
 .login-container {
+    max-width: 90%;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 300px;
+    border: 20px solid rgba(231, 231, 231, 0.897);
 }
 
 h2#log
@@ -81,7 +106,6 @@ h2#log
 
 label {
     display: block;
-    margin-bottom: 8px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#949494;
     font-size:12px;
@@ -91,14 +115,18 @@ label {
 }
 
 input {
+    height: 40px;
+    margin-top: 20px;
     width: 100%;
     padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius:15px;
 }
 
 button {
+    height: 40px;
+    margin: 10px 0px 10px 0px;
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -157,13 +185,13 @@ h2
 }
 div#fora{
     padding: 30px 0px;
-   display: list-item;
+   display: flex;
    background-color:rgb(25,175,240);
 }
 div#pt1
 {
     display: flex;
-    padding: 30px,65px;
+    padding: 30px 65px;
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -187,6 +215,7 @@ div#pt1>h1
 }
 div#pt1>p
 {
+    margin-bottom: 25px;
     height: 100px;
     font-size: 12px;
     line-height: 22px;
@@ -342,7 +371,8 @@ a
     padding: 30px 8%;
     background-color:rgb(227,227,227);
     display: flex;
-    align-items:center;
+    text-align: center;
+    align-items: center;
     flex-direction: column;
 }
 #simulador>img
@@ -365,19 +395,78 @@ a
     line-height:16px;
     color:#636363;
 }
+option
+{
+
+}
+#igual
+{
+    font-family:'Gotanbook';
+    font-size: 7vw;
+    color: #636363;
+    font-weight:600;
+    margin:0px 6vw;
+}
+
+.container {
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelcon {
+    font-size: 11px;
+    font-family: 'Gotanbook';
+    line-height: 15px;
+    color: #636363;
+    font-weight: normal;
+}
+
+select#pontos {
+    border-width: 0px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color:rgb(17,127,202);
+    color: white;
+    font-size: 2.5vw;
+    font-family: 'Gotanbook';
+    font-weight:bold;
+    max-width:100%;
+    border-radius: 10px;
+}
+
+.resultado {
+
+    color: #333;
+}
+
+.resul
+{
+    max-width: 100%;
+    font-size:3.5vw;
+    color: rgb(0, 104, 178);
+    font-family: 'gotanbook';
+    font-weight: bold;
+}
+
+
 #bt
 {
+    text-align: center;
     color:white;
     font-family: 'Gotanbook';
     line-height: 16px;
     font-size: 12px;
     border-radius: 3px;
+    max-width: max-content;
     padding: 0.454545em 0.909091em;
     background-color: rgb(17,127,202);
 }
 a#bt:hover
 {
-    text-decoration: underline;
+    background-color:rgb(51, 144, 206);
 }
 footer
 {

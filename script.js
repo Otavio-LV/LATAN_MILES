@@ -19,3 +19,5 @@ function isValidCPF(cpf) {
     const cpfPattern = /^\d{11}$/;
     return cpfPattern.test(cpf);
 }
+
+
