@@ -14,6 +14,10 @@
     font-family:trebucitali;
     src: url(../fontes/trebuc/Trebuchet-MS-Italic.ttf), format(ttf);
 }
+@font-face {
+    font-family:'Gotanblack';
+    src: url(../fontes/Gotham/Gotham-Black.otf), format(otf);
+}
 @media (min-width:850px)
 {
     option
@@ -42,14 +46,20 @@ body
 #bar1
 {
     background-color:rgb(27,0,136);
-    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items:center;
 }
 #bar1>p
 {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
     color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #bl
 {
@@ -57,6 +67,8 @@ body
     height: 100%;
     display: flex;
     align-items: center;
+    margin-left:0px;
+
 }
 #bar2
 {
@@ -68,18 +80,27 @@ body
 }
 #bar2>h3
 {
-    color: white;
     line-height: 16px;
-    padding: 24px 0px 15px 0px;
+    padding: 21px 0px 12px 0px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family:'Gotanbook';
 }
 #step1
 {
-    border-bottom: 5px solid gray;
+    color: white;
+    border-bottom: 5px solid rgb(77,159,215);
+}
+h3.nostep
+{
+    color:rgb(145, 197, 231);
 }
 div#h1
 {
     background-color: rgb(25,175,240);
-    padding:30px 65px;
+    padding:25px 65px;
+
+
 }
 div#h1>div
 {
@@ -89,7 +110,9 @@ div#h1>div
 h1
 {
     color: white;
-    
+    font-size:24px;
+    font-family: "Gotanbook";
+    font-weight: 500;
 }
 p
 {
@@ -99,7 +122,7 @@ main{
     align-items: center;
     flex-direction: column;
     margin: auto;
-    width:90%;
+    width:95%;
     display: flex;
     justify-items: center;
 }
@@ -109,11 +132,22 @@ main{
     color: white;
     margin-top: 20px;
 }
+#idfora
+{
+    background-color:rgb(17,127,202);
+    padding: 20px 20px;
+}
+p#N°LATAMPass
+{
+    color: white;    
+    font-size: 14px;
+    margin:10px 0px 0px 0px;
+    line-height: 14px;
+}
 #id>p
 {
-    color: white;
-    background-color:rgb(17,127,202);
-    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 #limites
 {
@@ -126,7 +160,7 @@ main{
 }
 .limites
 {
-    height: 100px;
+    height: 90px;
     background-color: white;
     width: 50%;
     display: flex;
@@ -139,6 +173,11 @@ main{
 {
     margin-right: 1px;
     padding: 20px 10px 20px 20px;
+    font-family:'Gotanbook';
+    font-size: 11px;
+    line-height:11px;
+    font-weight: normal;
+    color:rgb(99, 99, 99);
 }
 #limiten
 {
@@ -149,10 +188,28 @@ main{
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
+}
+#saldo
+{
+    color: rgb(17, 127, 202);
+    font-family: 'Gotanblack';
+    font-size: 22px;
+}
+#pontosp
+{
+    margin-left:5px;
+    font-family:'Gotanblack';
+    font-size: 9px;
+    color:rgb(99, 99, 99);
 }
 #data
 {
-
+    color: rgb(99, 99, 99);
+    font-size: 11px;
+    font-family:'Gotanbook';
+    line-height: 14px;
+    font-weight: normal;
+    font-style: italic;
 }

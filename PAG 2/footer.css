@@ -1,0 +1,54 @@
+footer
+{
+    background: url(../img/shortcut/form.png) right top no-repeat #10004f;
+}
+div#footer
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+div#ctt
+{
+    max-width:25%;
+    padding: 16px ;
+}
+#ctt>h4
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size:18px;
+    line-height: 24px;
+    color: white;
+    letter-spacing: 0.2px;
+    padding: 16px 0px;
+}
+#ctt>ul>img
+{
+    margin: 0px 0px;
+}
+#cttft
+{
+    padding: 0px 0px 30px 16px;
+}
+ul>img
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+}
+div#local
+{
+    padding: 30px 10%;
+    text-align: center;
+    background-color: white;
+}
+div#local>p
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 18px;
+    color: black;
+}

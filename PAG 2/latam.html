@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="convert.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
     <header>
@@ -27,13 +28,19 @@
     </header>
     <main>
         <div id="id">
-            <p>N° LATAM Pass: <span id="identificacao"></span></p>
+            <div id="idfora">
+                <p id="N°LATAMPass">N° LATAM Pass:
+                    <span id="identificacao">
+                    </span>
+                </p>
+            </div>
+
             <div id="limites">
-                <p id="limitep" class="limites">Seu limite de pontos disponível para compra</p>
+                <p id="limitep" class="limites">SEU LIMITE DE PONTOS DISPONIVEIS PARA COMPRA</p>
                 <div id="limiten" class="limites">
                     <div id="num">
                         <p id="saldo">999.000</p>
-                        <p id="Pontosp">PONTOS</p>
+                        <p id="pontosp">PONTOS</p>
                     </div>
                     <p id="data">Em 10/08/2025, sua cota de 999.000 pontos será renovada</p>
                 </div>
@@ -73,9 +80,11 @@
         <h3>QUAL SERÁ O DESTINO DOS PONTOS?</h3>
         <div class="containerform">
             <label>
+                <img id="proprio" src="../img/shortcut/favicon.png" alt="">
                 <input type="radio" name="selection" id="leftRadio"> Opção da Esquerda
             </label>
             <label>
+                <img src="../img/shortcut/favicon.png" alt="" id="presente">
                 <input type="radio" name="selection" id="rightRadio"> Opção da Direita
             </label>
         </div>
@@ -95,6 +104,30 @@
         </div>
     
     </div>
+    <footer>
+        <div id="footer">
+            <div id="ctt">
+                <img src="../img/shortcut/latan logo.png" alt="">
+                <h4>
+                    Nossas Redes
+                </h4>
+            </div>
+                <div id="cttft">
+                    <ul>
+                        <img src="../img/shortcut/fb.png" alt="">
+                        <img src="../img/shortcut/tt.png" alt="">
+                        <img src="../img/shortcut/yt.png" alt="">
+                        <img src="../img/shortcut/ig.png" alt="">
+                    </ul>
+                </div>
+                <div id="wpp">
+                    <img src="" alt=""><img src="" alt="">
+                </div>
+        </div>
+        <div id="local">
+            <p>© 2024 LATAM Airlines Group S.A. - Todos os direitos reservados. CNPJ nº 02.012.862/0001-60 Rua Verbo Divino nº 2.001, 10º andar, Chácara Santo Antônio, São Paulo, SP, CEP 04.719-002, Brasil.</p>
+        </div>
+        </footer>
     <script src="script1.js"></script>
     <script src="script.js"></script>
     <script src="form.js"></script>
