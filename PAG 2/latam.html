@@ -66,8 +66,8 @@
                         }
                     </script>
                 </select>
-                <label class="labelcon">Conversor de Pontos para Dinheiro</h1>
-                <label class="labelcon" for="pontos">Selecione a quantidade de pontos:</label>
+                <label class="labelcon"><p id="labelcon1">A compra só é permitida para valores múltiplos de 1.000 (Mil)</p></h1>
+                <label class="labelcon" for="pontos">Limite para compra: 999.000</label>
             </div>
             <span id="igual">=</span>
             <div class="resultado">
@@ -79,13 +79,47 @@
     <div id="destino">
         <h3>QUAL SERÁ O DESTINO DOS PONTOS?</h3>
         <div class="containerform">
-            <label>
-                <img id="proprio" src="../img/shortcut/favicon.png" alt="">
-                <input type="radio" name="selection" id="leftRadio"> Opção da Esquerda
+
+            <label id="proprio">
+                <img id="usoproprio" src="../img/shortcut/uso proprio.png" alt="">
+                <span><input type="radio" name="selection" id="leftRadio"> Minha conta</span>
             </label>
-            <label>
-                <img src="../img/shortcut/favicon.png" alt="" id="presente">
-                <input type="radio" name="selection" id="rightRadio"> Opção da Direita
+
+            <label id="presente">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Camada_1" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30; width:70px;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{opacity:0.5;fill:#7BAA29;enable-background:new    ;}
+                        .st1{opacity:0.5;fill:#E84B56;enable-background:new    ;}
+                        .st2{opacity:0.5;fill:#F98C41;enable-background:new    ;}
+                        .st3{opacity:0.5;fill:#EAC93F;enable-background:new    ;}
+                        .st4{opacity:0.5;fill:#4C9CD1;enable-background:new    ;}
+                        .st5{fill:#FFFFFF;}
+                        .st6{fill:#4C9CD1;}
+                    </style>
+                    <circle class="st0" cx="14.8" cy="14.9" r="4.7"/>
+                    <circle class="st1" cx="25.6" cy="7.1" r="2.4"/>
+                    <circle class="st2" cx="25.3" cy="3.7" r="1.6"/>
+                    <circle class="st2" cx="23" cy="7.2" r="2.8"/>
+                    <circle class="st3" cx="23.2" cy="10" r="3.2"/>
+                    <circle class="st3" cx="19.5" cy="10" r="3.5"/>
+                    <circle class="st4" cx="16.4" cy="15.9" r="4.1"/>
+                    <circle class="st0" cx="20.5" cy="14.4" r="3.6"/>
+                    <circle class="st4" cx="19.1" cy="17" r="4.7"/>
+                    <path class="st5" d="M23.7,17.2l0,9.3c0,0,0.1,1.2-1.2,1.2s-11.6,0-11.6,0s-1.2,0.1-1.2-1.2c0-1.3,0-4.9,0-4.9l-0.5-0.5l-3.8,6.5  l-2.6-1.6L9,14.9l1.8,3l0.7-0.7L23.7,17.2L23.7,17.2z"/>
+                    <g id="XMLID_42_">
+                        <g>
+                            <path id="XMLID_80_" class="st6" d="M9,14.9l-1.1,1.9c0-0.3,0-0.6,0-0.8c-0.3-1.2-1.6-2-2.8-1.6c-0.6,0.2-1.1,0.6-1.4,1.1    c-0.3,0.5-0.4,1.1-0.2,1.8c0.1,0.5,0.8,1.3,1.4,2c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1,0.1-0.1,0.3-0.2,0.4c-1-0.2-2-0.4-2.5-0.2    c-0.6,0.2-1.1,0.6-1.4,1.1c-0.3,0.5-0.4,1.1-0.2,1.8c0.3,1.2,1.6,2,2.8,1.6c0.2-0.1,0.5-0.2,0.8-0.4l-1.1,1.9    c-0.3,0.6-0.1,1.3,0.4,1.6l0.9,0.5c0.6,0.3,1.3,0.1,1.6-0.4l2.6-4.6l-2.8-1.6l0.9-1.5l2.8,1.6l2.6-4.6c0.3-0.6,0.1-1.3-0.4-1.6    l-0.9-0.5C10,14.2,9.3,14.4,9,14.9z M4.5,16.9c-0.1-0.3,0-0.6,0.1-0.9c0.2-0.3,0.4-0.5,0.7-0.5c0.3-0.1,0.6,0,0.9,0.1    c0.3,0.2,0.5,0.4,0.5,0.7c0.1,0.3-0.1,1.3-0.4,2.5c-0.1,0-0.2,0-0.3,0C5.2,17.9,4.6,17.2,4.5,16.9z M1.4,22.2    c-0.1-0.3,0-0.6,0.1-0.9c0.2-0.3,0.4-0.5,0.7-0.5c0.3-0.1,1.2,0.1,2.4,0.3c0.1,0.1,0.1,0.2,0.2,0.3c-0.9,0.9-1.6,1.5-2,1.6    C2.2,23.2,1.6,22.8,1.4,22.2z"/>
+                            <g id="XMLID_75_">
+                                <path id="XMLID_79_" class="st6" d="M17.6,27.7h5c0.6,0,1.2-0.5,1.2-1.2v-4.9h-6.2V27.7z"/>
+                                <path id="XMLID_78_" class="st6" d="M9.8,26.5c0,0.6,0.5,1.2,1.2,1.2h4.9v-6H9.8L9.8,26.5L9.8,26.5z"/>
+                                <polygon id="XMLID_77_" class="st6" points="12.6,17.2 10.8,20.4 15.9,20.4 15.9,17.2    "/>
+                                <rect id="XMLID_76_" x="17.6" y="17.2" class="st6" width="6.1" height="3.2"/>
+                            </g>
+                        </g>
+                    </g>
+                    <circle class="st1" cx="28.6" cy="3.8" r="1.1"/>
+                    </svg>
+                <span><input type="radio" name="selection" id="rightRadio">Ponto presente</span>
             </label>
         </div>
     

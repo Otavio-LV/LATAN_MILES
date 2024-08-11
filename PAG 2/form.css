@@ -1,11 +1,48 @@
 body {
     font-family: Arial, sans-serif;
 }
+#destino
+{
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+#destino h3
+{
+    font-family:'Gotanlight';
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color:rgb(148 148 148);
 
+}
+#proprio
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#usoproprio
+{
+    padding-top: 20px;
+    width: 50px;
+}
+#presente
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#presentesvg
+{
+    width: 70px;
+}
 .containerform {
     display: flex;
     gap: 10px;
     margin: 20px;
+    justify-content:space-evenly;
+    max-width: 700px;
 }
 
 #formContainer {

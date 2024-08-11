@@ -15,17 +15,18 @@
 #simulador>h2
 {
     font-family:'Gotanlight';
-    font-size:18px;
+    font-size:16px;
     margin: 0px;
     line-height:18px;
+    color: rgb(147, 147, 147);
 }
 #simulador>h3
 {
     margin: 20px 0px;
     font-family:'Gotanlight';
-    font-size: 12px;
+    font-size: 11px;
     line-height:16px;
-    color:#636363;
+    color:rgb(99, 99, 99);
 }
 #igual
 {
@@ -50,8 +51,22 @@
     line-height: 15px;
     color: #636363;
     font-weight: normal;
+} 
+#labelcon1
+{
+    margin-bottom:10px;
+    font-size: 11px;
+    font-family: 'Gotanbook';
+    line-height: 15px;
+    color: #636363;
+    font-weight: normal;
 }
-
+div#select
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+}
 select#pontos {
     border-width: 0px;
     margin: 10px 0;
