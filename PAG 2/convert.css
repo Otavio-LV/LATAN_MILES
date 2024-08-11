@@ -1,0 +1,80 @@
+#simulador
+{
+    padding: 30px 8%;
+    background-color:rgb(227,227,227);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+#simulador>img
+{
+    width:75vw;
+    height: 35vw;
+}
+#simulador>h2
+{
+    font-family:'Gotanlight';
+    font-size:18px;
+    margin: 0px;
+    line-height:18px;
+}
+#simulador>h3
+{
+    margin: 20px 0px;
+    font-family:'Gotanlight';
+    font-size: 12px;
+    line-height:16px;
+    color:#636363;
+}
+#igual
+{
+    font-family:'Gotanbook';
+    font-size: 7vw;
+    color: #636363;
+    font-weight:600;
+    margin:0px 6vw;
+}
+
+.container {
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelcon {
+    font-size: 11px;
+    font-family: 'Gotanbook';
+    line-height: 15px;
+    color: #636363;
+    font-weight: normal;
+}
+
+select#pontos {
+    border-width: 0px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color:rgb(17,127,202);
+    color: white;
+    font-size: 2.5vw;
+    font-family: 'Gotanbook';
+    font-weight:bold;
+    max-width:100%;
+    border-radius: 10px;
+}
+
+.resultado {
+
+    color: #333;
+}
+
+.resul
+{
+    max-width: 100%;
+    font-size:3.5vw;
+    color: rgb(0, 104, 178);
+    font-family: 'gotanbook';
+    font-weight: bold;
+}

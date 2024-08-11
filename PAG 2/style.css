@@ -1,0 +1,158 @@
+@font-face {
+    font-family:'Gotanbook';
+    src: url(../fontes/Gotham/Gotham-Book.otf), format(otf);
+}
+@font-face {
+    font-family:'Gotanlight';
+    src: url(../fontes/Gotham/Gotham-Light.otf), format(otf);
+}
+@font-face {
+    font-family:'trebuc';
+    src: url(../fontes/trebuc/trebuc.ttf), format(ttf);
+}
+@font-face {
+    font-family:trebucitali;
+    src: url(../fontes/trebuc/Trebuchet-MS-Italic.ttf), format(ttf);
+}
+@media (min-width:850px)
+{
+    option
+    {
+        font-size: 20px;
+    }
+}
+@media (max-width:849px)
+{
+    option
+    {
+        font-size: 2.5vw;
+    }
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(227,227,227);
+}
+#bar1
+{
+    background-color:rgb(27,0,136);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+#bar1>p
+{
+    color: white;
+}
+#bl
+{
+    background-color: rgb(220,55,50);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#bar2
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(17, 127, 202);
+    padding: 0px 10px;
+}
+#bar2>h3
+{
+    color: white;
+    line-height: 16px;
+    padding: 24px 0px 15px 0px;
+}
+#step1
+{
+    border-bottom: 5px solid gray;
+}
+div#h1
+{
+    background-color: rgb(25,175,240);
+    padding:30px 65px;
+}
+div#h1>div
+{
+    justify-content: space-between;
+    display: flex;
+}
+h1
+{
+    color: white;
+    
+}
+p
+{
+    color: black;
+}
+main{
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width:90%;
+    display: flex;
+    justify-items: center;
+}
+#id
+{
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+}
+#id>p
+{
+    color: white;
+    background-color:rgb(17,127,202);
+    padding: 20px;
+}
+#limites
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+
+}
+.limites
+{
+    height: 100px;
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+}
+#limitep
+{
+    margin-right: 1px;
+    padding: 20px 10px 20px 20px;
+}
+#limiten
+{
+    padding: 20px 20px 20px 10px;
+    margin-left: 1px;
+}
+#num
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+#data
+{
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="convert.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <div id="bar1">
+            <p>Ir para site LATAM</p>
+            <p id="bl">Fazer Login</p>
+        </div>
+        <div id="bar2">
+            <h3 id="step1">Pacote de pontos</h3>
+            <h3 class="nostep">Pagamento</h3>
+            <h3 class="nostep">Confirmação</h3>
+        </div>
+        <div id="h1">
+            <div>
+                <h1>PACOTE DE PONTOS</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="id">
+            <p>N° LATAM Pass: <span id="identificacao"></span></p>
+            <div id="limites">
+                <p id="limitep" class="limites">Seu limite de pontos disponível para compra</p>
+                <div id="limiten" class="limites">
+                    <div id="num">
+                        <p id="saldo">999.000</p>
+                        <p id="Pontosp">PONTOS</p>
+                    </div>
+                    <p id="data">Em 10/08/2025, sua cota de 999.000 pontos será renovada</p>
+                </div>
+            </div>
+        </div>
+
+</main>
+    <div id="simulador">
+        <h2>
+            SIMULE SUA COMPRA DE PONTOS
+        </h2>
+        <h3>
+            CRIE RECORDAÇÕES, COMPRE PONTOS PARA VIAJAR!
+        </h3>
+    
+        <div class="container">
+            <div id="select">
+                <select id="pontos" onchange="converterPontos()" size="1">
+                    <!-- Opções de 1.000 a 1.000.000 pontos -->
+                    <script>
+                        for (let i = 1000; i <= 1000000; i += 1000) {
+                            document.write(`<option value="${i}">${i.toLocaleString('pt-BR')} PONTOS</option>`);
+                        }
+                    </script>
+                </select>
+                <label class="labelcon">Conversor de Pontos para Dinheiro</h1>
+                <label class="labelcon" for="pontos">Selecione a quantidade de pontos:</label>
+            </div>
+            <span id="igual">=</span>
+            <div class="resultado">
+                <p class="resul">R$ <span class="resul" id="dinheiro">70,00</span></p>
+                <label class="labelcon" for="dinheiro">VALOR EM REAIS</label>
+            </div>
+        </div>
+    </div>
+    <div id="destino">
+        <h3>QUAL SERÁ O DESTINO DOS PONTOS?</h3>
+        <div class="containerform">
+            <label>
+                <input type="radio" name="selection" id="leftRadio"> Opção da Esquerda
+            </label>
+            <label>
+                <input type="radio" name="selection" id="rightRadio"> Opção da Direita
+            </label>
+        </div>
+    
+        <div id="formContainer" class="hidden">
+            <form id="cpfForm">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+                <label for="confirmCpf">Confirme o CPF:</label>
+                <input type="text" id="confirmCpf" name="confirmCpf" required>
+                <span id="error-message" class="error-message"></span>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="cpfIdentification" class="hidden">
+                <p>CPF Identificado: <span id="identified-cpf"></span></p>
+            </div>
+        </div>
+    
+    </div>
+    <script src="script1.js"></script>
+    <script src="script.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
