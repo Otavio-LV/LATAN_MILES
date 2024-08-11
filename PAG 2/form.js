@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const rightRadio = document.getElementById('rightRadio');
     const formContainer = document.getElementById('formContainer');
     const cpfForm = document.getElementById('cpfForm');
-    const cpfInput = document.getElementById('cpf');
+    const cpfInput = document.getElementById('cpfinput1');
     const confirmCpfInput = document.getElementById('confirmCpf');
     const errorMessage = document.getElementById('error-message');
     const cpfIdentification = document.getElementById('cpfIdentification');

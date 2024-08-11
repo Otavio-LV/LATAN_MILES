@@ -16,6 +16,14 @@ body {
     color:rgb(148 148 148);
 
 }
+#pform
+{
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(148, 148, 148);
+    line-height: 16px;
+    font-weight: 500;
+}
 #proprio
 {
     display: flex;
@@ -37,6 +45,13 @@ body {
 {
     width: 70px;
 }
+.selectdestino
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: rgb(99, 99, 99);
+    font-style: italic;
+}
 .containerform {
     display: flex;
     gap: 10px;
@@ -47,12 +62,40 @@ body {
 
 #formContainer {
     margin-top: 20px;
+    background-color: white;flex-direction: column;
+    padding: 20px 20px;
+    margin-bottom: 100px;
 }
-
+.cpfinfora
+{
+    text-align: left;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: rgb(99, 99, 99);
+}
+.cpfin
+{
+    border: 1px solid rgb(148 148 148);
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
 .hidden {
     display: none;
 }
-
+#consul
+{
+    margin: 20px auto 0px auto;
+    width: 200px;
+    background-color: #117fca;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
 .error-message {
     color: red;
     font-size: 0.9em;
@@ -62,4 +105,32 @@ body {
 #cpfIdentification {
     margin-top: 10px;
     font-weight: bold;
+}
+input
+{
+    background-color: white;
+}
+#localdestino
+{
+    display: flex;
+    align-items: flex-end;
+    flex-direction:row;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #949494;
+    margin-bottom: 20px;
+}
+#avancar
+{
+    border-radius: 10px;
+    border:none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 15px 20px;
+    color: white;
+    background-color: #117fca;
+    font-size: 20px;
+    font-family:'gotanbook';
+    font-weight: 500;
+    line-height: 16px;
 }
